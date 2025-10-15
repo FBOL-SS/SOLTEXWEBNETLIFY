@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denim Pro 5000 | SOLTEX LAGUNA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0B2242',
+                        blue: '#1C4E80',
+                        lightblue: '#3BA3FF',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .tab-active {
+            border-bottom: 2px solid #3BA3FF;
+            color: #3BA3FF;
+        }
+        .gallery-thumbnail {
+            transition: all 0.2s ease;
+        }
+        .gallery-thumbnail:hover, .gallery-thumbnail.active {
+            border: 2px solid #3BA3FF;
+        }
+        .spec-item:nth-child(odd) {
+            background-color: #f8fafc;
+        }
+    </style>
+</head>
+<body class="font-sans bg-white text-navy">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="flex items-center">
+                        <img src="http://static.photos/industry/1200x630/12" alt="SOLTEX LAGUNA Logo" class="h-12">
+                        <span class="ml-3 text-xl font-bold">SOLTEX LAGUNA</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+                    <a href="shop.html" class="hover:text-blue-600 transition">Shop</a>
+                    <a href="our-brands.html" class="hover:text-blue-600 transition">Our Brands</a>
+                    <a href="about.html" class="hover:text-blue-600 transition">About</a>
+                    <a href="contact.html" class="hover:text-blue-600 transition">Contact</a>
+                </div>
+<div class="flex items-center space-x-4">
+                    <a href="#" class="p-2 rounded-full hover:bg-gray-100">
+                        <i data-feather="search"></i>
+                    </a>
+                    <a href="#" class="p-2 rounded-full hover:bg-gray-100">
+                        <i data-feather="shopping-cart"></i>
+                    </a>
+                    <button class="md:hidden focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center text-sm text-gray-600">
+            <a href="index.html" class="hover:text-blue-600">Home</a>
+            <i data-feather="chevron-right" class="mx-2 w-4 h-4"></i>
+            <a href="shop.html" class="hover:text-blue-600">Shop</a>
+            <i data-feather="chevron-right" class="mx-2 w-4 h-4"></i>
+            <a href="#" class="hover:text-blue-600">Industrial Machines</a>
+            <i data-feather="chevron-right" class="mx-2 w-4 h-4"></i>
+            <span class="text-gray-900">Denim Pro 5000</span>
+        </div>
+    </div>
+
+    <!-- Product Detail -->
+    <section class="py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row">
+                <!-- Product Gallery -->
+                <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
+                    <div class="relative mb-4 rounded-lg overflow-hidden bg-gray-100" style="padding-bottom: 75%;">
+                        <img id="main-image" src="http://static.photos/industry/1200x900/20" alt="Denim Pro 5000" class="absolute w-full h-full object-contain">
+                    </div>
+                    <div class="grid grid-cols-4 gap-2">
+                        <div class="cursor-pointer gallery-thumbnail active" onclick="changeImage('http://static.photos/industry/1200x900/20')">
+                            <img src="http://static.photos/industry/1200x900/20" alt="Denim Pro 5000" class="w-full h-20 object-cover rounded">
+                        </div>
+                        <div class="cursor-pointer gallery-thumbnail" onclick="changeImage('http://static.photos/industry/1200x900/21')">
+                            <img src="http://static.photos/industry/1200x900/21" alt="Denim Pro 5000 Side View" class="w-full h-20 object-cover rounded">
+                        </div>
+                        <div class="cursor-pointer gallery-thumbnail" onclick="changeImage('http://static.photos/industry/1200x900/22')">
+                            <img src="http://static.photos/industry/1200x900/22" alt="Denim Pro 5000 Detail" class="w-full h-20 object-cover rounded">
+                        </div>
+                        <div class="cursor-pointer gallery-thumbnail" onclick="changeImage('http://static.photos/industry/1200x900/23')">
+                            <img src="http://static.photos/industry/1200x900/23" alt="Denim Pro 5000 in Action" class="w-full h-20 object-cover rounded">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Info -->
+                <div class="lg:w-1/2">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h1 class="text-3xl font-bold mb-2">Denim Pro 5000</h1>
+                            <div class="flex items-center mb-4">
+                                <div class="flex">
+                                    <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                    <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                    <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                    <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                    <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                </div>
+                                <span class="text-gray-500 text-sm ml-2">(24 reviews)</span>
+                            </div>
+                        </div>
+                        <span class="bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">BESTSELLER</span>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <span class="text-3xl font-bold">$3,850</span>
+                        <span class="text-gray-500 line-through ml-2">$4,200</span>
+                        <span class="bg-green-100 text-green-800 text-sm font-medium ml-2 px-2 py-0.5 rounded">8% OFF</span>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <span class="bg-green-100 text-green-800 text-sm font-medium px-2 py-0.5 rounded">In Stock</span>
+                        <span class="text-gray-600 ml-2">Ships within 3-5 business days</span>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <p class="text-gray-700 mb-4">The Denim Pro 5000 is our flagship heavy-duty sewing machine specifically engineered for denim production. With automatic thread trimming and reinforced stitching capabilities, it handles multiple layers of thick denim with ease.</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-green-500 mr-2 w-4 h-4 flex-shrink-0"></i>
+                                <span>Automatic thread trimming system</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-green-500 mr-2 w-4 h-4 flex-shrink-0"></i>
+                                <span>Reinforced stitching for heavy fabrics</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-green-500 mr-2 w-4 h-4 flex-shrink-0"></i>
+                                <span>4,500 stitches per minute</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-green-500 mr-2 w-4 h-4 flex-shrink-0"></i>
+                                <span>Programmable needle positioning</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-green-500 mr-2 w-4 h-4 flex-shrink-0"></i>
+                                <span>5-year limited warranty</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <div class="flex items-center mb-4">
+                            <span class="font-medium mr-4">Quantity:</span>
+                            <div class="flex items-center border border-gray-300 rounded">
+                                <button class="px-3 py-1 focus:outline-none">
+                                    <i data-feather="minus" class="w-4 h-4"></i>
+                                </button>
+                                <input type="number" value="1" min="1" class="w-12 text-center border-l border-r border-gray-300 py-1 focus:outline-none">
+                                <button class="px-3 py-1 focus:outline-none">
+                                    <i data-feather="plus" class="w-4 h-4"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <button class="bg-lightblue hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg flex-grow transition">
+                                <i data-feather="shopping-cart" class="mr-2 w-5 h-5"></i> Add to Cart
+                            </button>
+                            <button class="border border-lightblue text-lightblue hover:bg-lightblue hover:text-white font-bold py-3 px-6 rounded-lg transition">
+                                <i data-feather="heart" class="w-5 h-5"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-200 pt-4">
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i data-feather="truck" class="mr-2 w-4 h-4"></i>
+                            <span>Free shipping on orders over $1,000</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600 mt-2">
+                            <i data-feather="shield" class="mr-2 w-4 h-4"></i>
+                            <span>5-year limited warranty included</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Tabs -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="border-b border-gray-200 mb-8">
+                <nav class="flex -mb-px space-x-8">
+                    <button id="description-tab" class="tab-active py-4 px-1 font-medium text-sm">
+                        Description
+                    </button>
+                    <button id="specs-tab" class="py-4 px-1 font-medium text-sm text-gray-500 hover:text-gray-700">
+                        Specifications
+                    </button>
+                    <button id="reviews-tab" class="py-4 px-1 font-medium text-sm text-gray-500 hover:text-gray-700">
+                        Reviews (24)
+                    </button>
+                    <button id="support-tab" class="py-4 px-1 font-medium text-sm text-gray-500 hover:text-gray-700">
+                        Support
+                    </button>
+                </nav>
+            </div>
+            
+            <!-- Description Content -->
+            <div id="description-content" class="tab-content">
+                <div class="prose max-w-none">
+                    <h3 class="text-xl font-bold mb-4">Professional Denim Sewing Machine</h3>
+                    <p class="mb-4">The SOLTEX LAGUNA Denim Pro 5000 is specifically designed for heavy-duty denim production environments. Its reinforced construction and high-torque motor allow it to effortlessly sew through multiple layers of thick denim fabric.</p>
+                    
+                    <h4 class="font-bold mb-2">Key Features:</h4>
+                    <ul class="mb-4 pl-5 list-disc">
+                        <li class="mb-2">Automatic thread trimming system eliminates manual trimming and increases productivity</li>
+                        <li class="mb-2">Programmable needle positioning for precise stitching control</li>
+                        <li class="mb-2">4,500 stitches per minute for maximum throughput</li>
+                        <li class="mb-2">Heavy-duty rotary hook mechanism for reliable performance</li>
+                        <li class="mb-2">Oil-free lubrication system reduces maintenance requirements</li>
+                        <li class="mb-2">Digital stitch counter for production monitoring</li>
+                    </ul>
+                    
+                    <h4 class="font-bold mb-2">Technical Highlights:</h4>
+                    <p class="mb-4">The Denim Pro 5000 features our proprietary "DenimStitch™" technology that automatically adjusts thread tension and feed dog pressure based on fabric thickness, ensuring perfect stitches every time. The machine comes with specialized denim needles and presser feet as standard equipment.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <img src="http://static.photos/industry/640x360/24" alt="Denim Pro 5000 in factory" class="rounded-lg">
+                        <img src="http://static.photos/industry/640x360/25" alt="Denim Pro 5000 close-up" class="rounded-lg">
+                    </div>
+                    
+                    <h4 class="font-bold mb-2">Included Accessories:</h4>
+                    <ul class="mb-4 pl-5 list-disc">
+                        <li class="mb-2">Denim-specific presser foot set (5 pieces)</li>
+                        <li class="mb-2">Heavy-duty bobbin case</li>
+                        <li class="mb-2">Tool kit with maintenance tools</li>
+                        <li class="mb-2">Operator's manual (Spanish/English)</li>
+                        <li class="mb-2">Standard worktable</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Specifications Content -->
+            <div id="specs-content" class="tab-content hidden">
+                <div class="overflow-hidden border border-gray-200 rounded-lg">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr class="spec-item">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Model</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">DP5000-HD</td>
+                            </tr>
+                            <tr class="spec-item">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Stitch Type</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Lockstitch (301)</td>
+                            </tr>
+                            <tr class="spec-item">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Max Stitch Speed</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">4,500 SPM</td>
+                            </tr>
+                            <tr class="spec-item">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Stitch Length</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">1.5-6.0 mm</td>
+                            </tr>
+                            <tr class="spec-item">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Needle System</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">DPx5 (included)</td>
+                            </tr>
+                            <tr class="spec-item">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Presser Foot Lift</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">16 mm</td>
+                            </tr>
+                            <tr class="spec-item">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Motor Power</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">550W brushless servo</td>
+                            </tr>
+                            <tr class="spec-item">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Max Fabric Thickness</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">8 layers of 12oz denim</td>
+                            </tr>
+                            <tr class="spec-item">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Machine Weight</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">48 kg</td>
+                            </tr>
+                            <tr class="spec-item">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Dimensions (LxWxH)</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">620 x 280 x 450 mm</td>
+                            </tr>
+                            <tr class="spec-item">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Voltage</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">220V, 50/60Hz</td>
+                            </tr>
+                            <tr class="spec-item">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Warranty</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">5 years limited</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Reviews Content -->
+            <div id="reviews-content" class="tab-content hidden">
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold mb-4">Customer Reviews</h3>
+                    <div class="flex items-center mb-6">
+                        <div class="mr-4">
+                            <span class="text-4xl font-bold">4.9</span>
+                            <span class="text-gray-500">/5</span>
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-1">
+                                <div class="flex mr-2">
+                                    <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                    <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                    <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                    <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                    <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                </div>
+                                <span class="text-gray-600 text-sm">24 reviews</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2 mb-1">
+                                <div class="bg-yellow-400 h-2 rounded-full" style="width: 92%"></div>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2 mb-1">
+                                <div class="bg-yellow-400 h-2 rounded-full" style="width: 8%"></div>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2 mb-1">
+                                <div class="bg-yellow-400 h-2 rounded-full" style="width: 0%"></div>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2 mb-1">
+                                <div class="bg-yellow-400 h-2 rounded-full" style="width: 0%"></div>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-yellow-400 h-2 rounded-full" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="bg-lightblue hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm transition">
+                        Write a Review
+                    </button>
+                </div>
+                
+                <div class="space-y-6">
+                    <!-- Review 1 -->
+                    <div class="border-b border-gray-200 pb-6">
+                        <div class="flex justify-between mb-2">
+                            <div class="flex items-center">
+                                <img src="http://static.photos/people/200x200/4" alt="Carlos M." class="h-10 w-10 rounded-full mr-3">
+                                <div>
+                                    <h4 class="font-semibold">Carlos M.</h4>
+                                    <div class="flex">
+                                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="text-gray-500 text-sm">2 weeks ago</span>
+                        </div>
+                        <h5 class="font-medium mb-2">Perfect for our denim production line</h5>
+                        <p class="text-gray-700 mb-2">We've been using the Denim Pro 5000 for 6 months now across 12 machines in our factory. The difference in productivity compared to our old machines is night and day. Thread breaks are minimal and the automatic trimmer saves so much time.</p>
+                        <div class="flex space-x-2">
+                            <img src="http://static.photos/industry/200x200/26" alt="Review photo" class="h-16 w-16 object-cover rounded">
+                            <img src="http://static.photos/industry/200x200/27" alt="Review photo" class="h-16 w-16 object-cover rounded">
+                        </div>
+                    </div>
+                    
+                    <!-- Review 2 -->
+                    <div class="border-b border-gray-200 pb-6">
+                        <div class="flex justify-between mb-2">
+                            <div class="flex items-center">
+                                <img src="http://static.photos/people/200x200/5" alt="María G." class="h-10 w-10 rounded-full mr-3">
+                                <div>
+                                    <h4 class="font-semibold">María G.</h4>
+                                    <div class="flex">
+                                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="text-gray-500 text-sm">1 month ago</span>
+                        </div>
+                        <h5 class="font-medium mb-2">Worth every penny</h5>
+                        <p class="text-gray-700">After researching multiple brands, we chose SOLTEX LAGUNA for their reputation in denim machines. The Denim Pro 5000 has exceeded our expectations - it handles our heaviest denim with ease and the operators love the automatic features.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Support Content -->
+            <div id="support-content" class="tab-content hidden">
+                <div class="prose max-w-none">
+                    <h3 class="text-xl font-bold mb-4">Product Support</h3>
+                    <p class="mb-4">Your Denim Pro 5000 comes with comprehensive support options to ensure you get the most from your investment.</p>
+                    
+                    <h4 class="font-bold mb-2">Documentation:</h4>
+                    <ul class="mb-6 pl-5 list-disc">
+                        <li class="mb-2"><a href="#" class="text-lightblue hover:underline">User Manual (PDF)</a></li>
+                        <li class="mb-2"><a href="#" class="text-lightblue hover:underline">Maintenance Guide (PDF)</a></li>
+                        <li class="mb-2"><a href="#" class="text-lightblue hover:underline">Safety Instructions (PDF)</a></li>
+                        <li class="mb-2"><a href="#" class="text-lightblue hover:underline">Installation Video</a></li>
+                    </ul>
+                    
+                    <h4 class="font-bold mb-2">Warranty Information:</h4>
+                    <p class="mb-4">The Denim Pro 5000 comes with a 5-year limited warranty covering parts and labor. Routine maintenance and consumables (needles, etc.) are not covered.</p>
+                    
+                    <h4 class="font-bold mb-2">Technical Support:</h4>
+                    <p class="mb-4">Our technical support team is available Monday-Friday, 8am-6pm CST:</p>
+                    <ul class="mb-6 pl-5 list-disc">
+                        <li class="mb-2">Phone: +52 81 1234 5678</li>
+                        <li class="mb-2">Email: support@soltexlaguna.com</li>
+                        <li class="mb-2">WhatsApp: +52 81 8765 4321</li>
+                    </ul>
+                    
+                    <h4 class="font-bold mb-2">Service Centers:</h4>
+                    <p class="mb-4">We have authorized service centers throughout Mexico and Central America. <a href="#" class="text-lightblue hover:underline">Find your nearest service center</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-bold mb-8">You May Also Like</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Related Product 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm card-hover">
+                    <img src="http://static.photos/industry/640x360/28" alt="Denim Pro 3000" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-1">Denim Pro 3000</h3>
+                        <p class="text-gray-600 text-sm mb-2">Mid-range denim sewing machine</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">$2,950</span>
+                            <button class="bg-lightblue hover:bg-blue-700 text-white px-4 py-2 rounded text-sm font-medium transition">
+                                <i data-feather="shopping-cart" class="w-4 h-4 inline mr-1"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Related Product 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm card-hover">
+                    <img src="http://static.photos/technology/640x360/29" alt="Auto Tension System" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-1">Auto Tension System</h3>
+                        <p class="text-gray-600 text-sm mb-2">For perfect stitch quality</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">$1,120</span>
+                            <button class="bg-lightblue hover:bg-blue-700 text-white px-4 py-2 rounded text-sm font-medium transition">
+                                <i data-feather="shopping-cart" class="w-4 h-4 inline mr-1"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Related Product 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm card-hover">
+                    <img src="http://static.photos/industry/640x360/30" alt="Heavy-Duty Overlock" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-1">Heavy-Duty Overlock</h3>
+                        <p class="text-gray-600 text-sm mb-2">Professional overlock machine</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">$2,980</span>
+                            <button class="bg-lightblue hover:bg-blue-700 text-white px-4 py-2 rounded text-sm font-medium transition">
+                                <i data-feather="shopping-cart" class="w-4 h-4 inline mr-1"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Related Product 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm card-hover">
+                    <div class="relative">
+                        <img src="http://static.photos/industry/640x360/31" alt="Presser Foot Set" class="w-full h-48 object-cover">
+                        <span class="absolute top-2 right-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded">NEW</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-1">Premium Presser Foot Set</h3>
+                        <p class="text-gray-600 text-sm mb-2">For Denim Pro series</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">$245</span>
+                            <button class="bg-lightblue hover:bg-blue-700 text-white px-4 py-2 rounded text-sm font-medium transition">
+                                <i data-feather="shopping-cart" class="w-4 h-4 inline mr-1"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-navy text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Stay Updated</h2>
+            <p class="max-w-2xl mx-auto mb-8">Subscribe to our newsletter for product updates, industry insights, and exclusive offers.</p>
+            <div class="max-w-md mx-auto flex">
+                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-l-lg focus:outline-none text-gray-900">
+                <button class="bg-lightblue hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-r-lg transition duration-300">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SOLTEX LAGUNA</h3>
+                    <p class="mb-4 text-gray-400">Industrial sewing solutions for apparel and denim manufacturers across Mexico and Central America since 1992.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="shop.html" class="text-gray-400 hover:text-white transition">Shop</a></li>
+                        <li><a href="our-brands.html" class="text-gray-400 hover:text-white transition">Our Brands</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+</ul>
+                </div>
+                
+                <!-- Products -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Industrial Machines</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Automation Systems</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Replacement Parts</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">New Arrivals</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Special Offers</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="map-pin" class="mr-2 mt-1 w-4 h-4"></i>
+                            <span class="text-gray-400">Av. Industrial 1234, Monterrey, Mexico</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="phone" class="mr-2 w-4 h-4"></i>
+                            <span class="text-gray-400">+52 81 1234 5678</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="mail" class="mr-2 w-4 h-4"></i>
+                            <span class="text-gray-400">info@soltexlaguna.com</span>
+                        </li>
+                        <li class="mt-4">
+                            <a href="#" class="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition">
+                                <i data-feather="message-square" class="mr-2 w-4 h-4"></i> WhatsApp Chat
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 SOLTEX LAGUNA. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+        
+        // Image gallery
+        function changeImage(src) {
+            document.getElementById('main-image').src = src;
+            document.querySelectorAll('.gallery-thumbnail').forEach(el => el.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+        }
+        
+        // Tab switching
+        const tabs = ['description', 'specs', 'reviews', 'support'];
+        tabs.forEach(tab => {
+            const tabElement = document.getElementById(`${tab}-tab`);
+            const contentElement = document.getElementById(`${tab}-content`);
+            
+            tabElement.addEventListener('click', () => {
+                // Hide all content and remove active class from tabs
+                document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+                document.querySelectorAll('nav button').forEach(el => {
+                    el.classList.remove('tab-active', 'text-blue-600');
+                    el.classList.add('text-gray-500');
+                });
+                
+                // Show selected content and mark tab as active
+                contentElement.classList.remove('hidden');
+                tabElement.classList.add('tab-active', 'text-blue-600');
+                tabElement.classList.remove('text-gray-500');
+            });
+        });
+    </script>
+</body>
+</html>

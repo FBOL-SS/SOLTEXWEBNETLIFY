@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Brands & Partnerships | SOLTEX LAGUNA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0B2242',
+                        blue: '#1C4E80',
+                        lightblue: '#3BA3FF',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #0B2242 0%, #1C4E80 100%);
+        }
+        .brand-card {
+            transition: all 0.3s ease;
+        }
+        .brand-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans bg-white text-navy">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="flex items-center">
+                        <img src="http://static.photos/industry/1200x630/12" alt="SOLTEX LAGUNA Logo" class="h-12">
+                        <span class="ml-3 text-xl font-bold">SOLTEX LAGUNA</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+                    <a href="shop.html" class="hover:text-blue-600 transition">Shop</a>
+                    <a href="our-brands.html" class="text-blue-600 font-medium">Our Brands</a>
+                    <a href="about.html" class="hover:text-blue-600 transition">About</a>
+                    <a href="contact.html" class="hover:text-blue-600 transition">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="p-2 rounded-full hover:bg-gray-100">
+                        <i data-feather="search"></i>
+                    </a>
+                    <a href="#" class="p-2 rounded-full hover:bg-gray-100">
+                        <i data-feather="shopping-cart"></i>
+                    </a>
+                    <button class="md:hidden focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-24">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Our Brands & Partnerships</h1>
+            <p class="text-xl max-w-3xl mx-auto">SOLTEX LAGUNA partners with leading OEM manufacturers and trusted suppliers to bring you the highest quality industrial sewing solutions.</p>
+        </div>
+    </section>
+
+    <!-- Brands Grid -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Brand 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg brand-card">
+                    <div class="flex justify-center mb-4">
+                        <img src="http://static.photos/industry/320x240/10" alt="DenimMaster Logo" class="h-20 object-contain">
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2">DenimMaster</h3>
+                    <p class="text-gray-700 text-center mb-4">Premium heavy-duty machines for denim and workwear production with patented tension control.</p>
+                    <div class="text-center">
+                        <a href="shop.html#denim" class="text-lightblue hover:underline font-medium inline-flex items-center">View Catalog <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i></a>
+                    </div>
+                </div>
+
+                <!-- Brand 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg brand-card">
+                    <div class="flex justify-center mb-4">
+                        <img src="http://static.photos/industry/320x240/11" alt="StitchPro Logo" class="h-20 object-contain">
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2">StitchPro</h3>
+                    <p class="text-gray-700 text-center mb-4">High-precision lockstitch and chainstitch machines for apparel manufacturing.</p>
+                    <div class="text-center">
+                        <a href="shop.html#stitch" class="text-lightblue hover:underline font-medium inline-flex items-center">View Catalog <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i></a>
+                    </div>
+                </div>
+
+                <!-- Brand 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg brand-card">
+                    <div class="flex justify-center mb-4">
+                        <img src="http://static.photos/industry/320x240/12" alt="TexAuto Logo" class="h-20 object-contain">
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2">TexAuto</h3>
+                    <p class="text-gray-700 text-center mb-4">Automated sewing solutions with robotic material handling and quality control.</p>
+                    <div class="text-center">
+                        <a href="shop.html#automation" class="text-lightblue hover:underline font-medium inline-flex items-center">View Catalog <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i></a>
+                    </div>
+                </div>
+
+                <!-- Brand 4 -->
+                <div class="bg-gray-50 p-6 rounded-lg brand-card">
+                    <div class="flex justify-center mb-4">
+                        <img src="http://static.photos/industry/320x240/13" alt="NeedleTech Logo" class="h-20 object-contain">
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2">NeedleTech</h3>
+                    <p class="text-gray-700 text-center mb-4">Specialized needles and sewing machine components engineered for performance.</p>
+                    <div class="text-center">
+                        <a href="shop.html#components" class="text-lightblue hover:underline font-medium inline-flex items-center">View Catalog <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i></a>
+                    </div>
+                </div>
+
+                <!-- Brand 5 -->
+                <div class="bg-gray-50 p-6 rounded-lg brand-card">
+                    <div class="flex justify-center mb-4">
+                        <img src="http://static.photos/industry/320x240/14" alt="OverLock Pro Logo" class="h-20 object-contain">
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2">OverLock Pro</h3>
+                    <p class="text-gray-700 text-center mb-4">Industrial overlock and safety stitch machines with automatic lubrication.</p>
+                    <div class="text-center">
+                        <a href="shop.html#overlock" class="text-lightblue hover:underline font-medium inline-flex items-center">View Catalog <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i></a>
+                    </div>
+                </div>
+
+                <!-- Brand 6 -->
+                <div class="bg-gray-50 p-6 rounded-lg brand-card">
+                    <div class="flex justify-center mb-4">
+                        <img src="http://static.photos/industry/320x240/15" alt="SewSmart Logo" class="h-20 object-contain">
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2">SewSmart</h3>
+                    <p class="text-gray-700 text-center mb-4">Smart sewing machines with IoT connectivity for production monitoring.</p>
+                    <div class="text-center">
+                        <a href="shop.html#smart" class="text-lightblue hover:underline font-medium inline-flex items-center">View Catalog <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="mt-12 text-center text-gray-500 text-sm">
+                <p>Replace these logos and names with authorized brand material.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SOLTEX LAGUNA</h3>
+                    <p class="mb-4 text-gray-400">Industrial sewing solutions for apparel and denim manufacturers across Mexico and Central America since 1992.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="shop.html" class="text-gray-400 hover:text-white transition">Shop</a></li>
+                        <li><a href="our-brands.html" class="text-gray-400 hover:text-white transition">Our Brands</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Products -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Industrial Machines</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Automation Systems</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Replacement Parts</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">New Arrivals</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Special Offers</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="map-pin" class="mr-2 mt-1 w-4 h-4"></i>
+                            <span class="text-gray-400">Av. Industrial 1234, Monterrey, Mexico</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="phone" class="mr-2 w-4 h-4"></i>
+                            <span class="text-gray-400">+52 81 1234 5678</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="mail" class="mr-2 w-4 h-4"></i>
+                            <span class="text-gray-400">info@soltexlaguna.com</span>
+                        </li>
+                        <li class="mt-4">
+                            <a href="#" class="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition">
+                                <i data-feather="message-square" class="mr-2 w-4 h-4"></i> WhatsApp Chat
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 SOLTEX LAGUNA. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
